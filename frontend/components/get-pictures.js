@@ -11,7 +11,7 @@ export const GetPics = () => {
     }, [])
 
     return (
-        <div className="grid-frame">
+        <div className="gallery">
             {pics.map(pic => (
                 <img src={`${pic.urls.regular}`} />
             ))}

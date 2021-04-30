@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 })
 //set up the routes for the app
 app.get('/api', (req, res) => {
-  unsplash.search.getPhotos({ query: 'inspiration', page: 1, perPage: 9 })
+  unsplash.search.getPhotos({ query: 'inspiration', page: 1, perPage: 10 })
     .then(toJson)
     .then(photos => {
       if (photos.type === 'success') {
