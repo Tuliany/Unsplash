@@ -7,8 +7,7 @@ export const GetPics = () => {
     useEffect(() => {
         fetch('http://localhost:8080/api/cat')
             .then(res => res.json())
-            .then(json => setPics(json.response.results))
-
+            .then(json => setPics(json.results))
     }, [])
 
     return (
