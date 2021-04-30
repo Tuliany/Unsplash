@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
   console.log('hello')
 })
 //set up the routes for the app
-app.get('/api/cat', (req, res) => {
+app.get('/api', (req, res) => {
   unsplash.search.getPhotos({ query: 'inspiration', page: 1, perPage: 9 })
     .then(toJson)
     .then(photos => {
