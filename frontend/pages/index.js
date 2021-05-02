@@ -12,9 +12,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Unsplash!</a>
-        </h1>
         <GetPics />
       </main>
     </div>
