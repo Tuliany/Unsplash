@@ -4,6 +4,7 @@ export const GetPics = () => {
     const [pics, setPics] = useState([]);
 
     useEffect(() => {
+    //  fetch('http://localhost:8080/api/unsplash')
         fetch('http://localhost:3000/api/unsplash')
             .then(res => res.json())
             .then(json => setPics(json.results))

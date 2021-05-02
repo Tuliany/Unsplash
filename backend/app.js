@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
   console.log('hello')
 })
 //set up the routes for the app
-app.get('/api', (req, res) => {
+app.get('/api/unsplash', (req, res) => {
   unsplash.search.getPhotos({ query: 'inspiration', page: 1, perPage: 10 })
     .then(toJson)
     .then(photos => {
@@ -32,7 +32,6 @@ app.get('/api', (req, res) => {
     })
 })
  
-
 app.listen(8080)
 module.exports = app
 
